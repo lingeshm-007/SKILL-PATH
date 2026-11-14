@@ -7,7 +7,8 @@
     "start": "node backend/src/server.js",
     "backend": "cd backend && node src/server.js",
     "frontend": "cd frontend && node node_modules/vite/bin/vite.js --host 0.0.0.0 --port 3000",
-    "dev": "node backend/src/server.js"
+    "dev": "node backend/src/server.js",
+    "test": "node --test backend/tests/*.test.js frontend/tests/*.test.js"
   }
 }
 

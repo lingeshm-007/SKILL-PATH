@@ -91,18 +91,23 @@ export default function LoginModal() {
 
   return (
     <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
-      <div className="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-200 space-y-6 animate-in fade-in zoom-in-95 duration-200 max-h-[92vh] overflow-y-auto">
+      <div 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="login-modal-title"
+        className="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-200 space-y-6 animate-in fade-in zoom-in-95 duration-200 max-h-[92vh] overflow-y-auto"
+      >
         
         {/* Header */}
         <div className="flex items-start justify-between border-b border-slate-100 pb-4">
           <div>
             <div className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" aria-hidden="true"></span>
               <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
                 Student Authentication
               </span>
             </div>
-            <h2 className="text-xl font-black text-slate-900 mt-1">
+            <h2 id="login-modal-title" className="text-xl font-black text-slate-900 mt-1">
               {mode === 'signin' ? 'Sign In to SkillPath AI' : 'Create Your Student Account'}
             </h2>
             <p className="text-xs text-slate-500 mt-0.5">
@@ -114,9 +119,10 @@ export default function LoginModal() {
 
           <button
             onClick={() => setIsLoginModalOpen(false)}
-            className="p-1.5 text-slate-400 hover:text-slate-600 rounded-lg hover:bg-slate-100 transition-colors"
+            aria-label="Close authentication modal"
+            className="p-1.5 text-slate-400 hover:text-slate-600 rounded-lg hover:bg-slate-100 transition-colors focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:outline-none"
           >
-            <X className="w-5 h-5" />
+            <X className="w-5 h-5" aria-hidden="true" />
           </button>
         </div>
 
@@ -126,9 +132,10 @@ export default function LoginModal() {
             type="button"
             onClick={handleGoogleSignIn}
             disabled={loading}
-            className="w-full py-3 px-4 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl text-xs font-bold text-slate-700 flex items-center justify-center gap-3 transition-all shadow-2xs hover:shadow-xs active:scale-98"
+            aria-label="Continue with Google Authentication"
+            className="w-full py-3 px-4 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl text-xs font-bold text-slate-700 flex items-center justify-center gap-3 transition-all shadow-2xs hover:shadow-xs active:scale-98 focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:outline-none"
           >
-            <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 fill="#4285F4"
                 d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"
@@ -163,13 +170,15 @@ export default function LoginModal() {
         {mode === 'signin' ? (
           <form onSubmit={handleEmailSignIn} className="space-y-4">
             <div>
-              <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+              <label htmlFor="signin-email" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
                 Student Email Address
               </label>
               <div className="relative">
-                <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+                <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" aria-hidden="true" />
                 <input
+                  id="signin-email"
                   type="email"
+                  autoComplete="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="e.g. lingesh@gmail.com, priya.sharma@gmail.com"
@@ -181,7 +190,7 @@ export default function LoginModal() {
 
             <div>
               <div className="flex items-center justify-between mb-1.5">
-                <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
+                <label htmlFor="signin-password" className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
                   Password
                 </label>
                 <span className="text-[10px] text-indigo-600 cursor-pointer hover:underline">
@@ -189,9 +198,11 @@ export default function LoginModal() {
                 </span>
               </div>
               <div className="relative">
-                <Lock className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+                <Lock className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" aria-hidden="true" />
                 <input
+                  id="signin-password"
                   type="password"
+                  autoComplete="current-password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••••••"
@@ -203,9 +214,9 @@ export default function LoginModal() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-3 px-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-bold shadow-sm shadow-indigo-300 transition-all flex items-center justify-center gap-2 active:scale-98"
+              className="w-full py-3 px-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-bold shadow-sm shadow-indigo-300 transition-all flex items-center justify-center gap-2 active:scale-98 focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:outline-none"
             >
-              <LogIn className="w-4 h-4" />
+              <LogIn className="w-4 h-4" aria-hidden="true" />
               <span>{loading ? 'Authenticating...' : 'Sign In to My Account'}</span>
             </button>
 
@@ -225,13 +236,15 @@ export default function LoginModal() {
         ) : (
           <form onSubmit={handleSignUp} className="space-y-4">
             <div>
-              <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+              <label htmlFor="signup-name" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
                 Full Name
               </label>
               <div className="relative">
-                <User className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+                <User className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" aria-hidden="true" />
                 <input
+                  id="signup-name"
                   type="text"
+                  autoComplete="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="e.g. Priya Sharma"
@@ -242,13 +255,15 @@ export default function LoginModal() {
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+              <label htmlFor="signup-email" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
                 Student Email Address
               </label>
               <div className="relative">
-                <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+                <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" aria-hidden="true" />
                 <input
+                  id="signup-email"
                   type="email"
+                  autoComplete="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="e.g. priya@university.edu"
@@ -259,10 +274,11 @@ export default function LoginModal() {
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+              <label htmlFor="signup-career" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
                 Target Career Goal
               </label>
               <select
+                id="signup-career"
                 value={targetCareer}
                 onChange={(e) => setTargetCareer(e.target.value)}
                 className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-bold text-slate-800 focus:outline-none focus:border-indigo-500"
@@ -276,10 +292,11 @@ export default function LoginModal() {
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+              <label htmlFor="signup-skills" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
                 Initial Skills (Comma-separated)
               </label>
               <input
+                id="signup-skills"
                 type="text"
                 value={customSkills}
                 onChange={(e) => setCustomSkills(e.target.value)}
@@ -291,9 +308,9 @@ export default function LoginModal() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-3 px-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-bold shadow-sm shadow-indigo-300 transition-all flex items-center justify-center gap-2 active:scale-98"
+              className="w-full py-3 px-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-bold shadow-sm shadow-indigo-300 transition-all flex items-center justify-center gap-2 active:scale-98 focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:outline-none"
             >
-              <UserPlus className="w-4 h-4" />
+              <UserPlus className="w-4 h-4" aria-hidden="true" />
               <span>{loading ? 'Initializing Agent Swarm...' : 'Create Account & Start Learning'}</span>
             </button>
 
@@ -311,6 +328,10 @@ export default function LoginModal() {
             </div>
           </form>
         )}
+
+      </div>
+    </div>
+  );
 
       </div>
     </div>

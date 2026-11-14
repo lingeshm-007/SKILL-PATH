@@ -244,9 +244,10 @@ export default function Profile() {
 
             {/* Option B: Custom Image URL */}
             <div>
-              <p className="text-xs font-semibold text-slate-700 mb-2">Or Paste Image URL</p>
+              <label htmlFor="profile-custom-url" className="text-xs font-semibold text-slate-700 mb-2 block">Or Paste Image URL</label>
               <div className="flex gap-2">
                 <input
+                  id="profile-custom-url"
                   type="url"
                   value={customUrlInput}
                   onChange={(e) => setCustomUrlInput(e.target.value)}
@@ -256,6 +257,7 @@ export default function Profile() {
                 <button
                   type="button"
                   onClick={handleApplyUrl}
+                  aria-label="Apply custom image URL"
                   className="px-3 py-2 bg-slate-800 hover:bg-slate-900 text-white rounded-xl text-xs font-bold transition-colors"
                 >
                   Apply
@@ -303,10 +305,11 @@ export default function Profile() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Full Name */}
           <div>
-            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+            <label htmlFor="profile-learner-name" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
               Learner Name
             </label>
             <input
+              id="profile-learner-name"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -317,10 +320,11 @@ export default function Profile() {
 
           {/* Target Career Goal */}
           <div>
-            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+            <label htmlFor="profile-career-goal" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
               Target Career Goal
             </label>
             <select
+              id="profile-career-goal"
               value={targetCareer}
               onChange={(e) => setTargetCareer(e.target.value)}
               className="w-full px-4 py-2.5 bg-indigo-50 border border-indigo-200 text-indigo-900 font-bold rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
@@ -352,6 +356,7 @@ export default function Profile() {
                 <button
                   type="button"
                   onClick={() => removeSkill(skill)}
+                  aria-label={`Remove skill ${skill}`}
                   className="hover:text-indigo-200 font-bold"
                 >
                   ×
@@ -361,7 +366,9 @@ export default function Profile() {
           </div>
 
           <div className="flex items-center gap-2">
+            <label htmlFor="profile-add-skill-input" className="sr-only">Add Skill</label>
             <input
+              id="profile-add-skill-input"
               type="text"
               value={newSkillInput}
               onChange={(e) => setNewSkillInput(e.target.value)}
@@ -371,6 +378,7 @@ export default function Profile() {
             <button
               type="button"
               onClick={addSkill}
+              aria-label="Add entered skill"
               className="px-3 py-2 bg-indigo-50 text-indigo-700 rounded-lg text-xs font-bold hover:bg-indigo-100"
             >
               + Add Skill
@@ -380,10 +388,11 @@ export default function Profile() {
 
         {/* Certifications */}
         <div>
-          <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+          <label htmlFor="profile-certifications" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
             Certifications
           </label>
           <input
+            id="profile-certifications"
             type="text"
             value={certifications}
             onChange={(e) => setCertifications(e.target.value)}
@@ -393,10 +402,11 @@ export default function Profile() {
 
         {/* Projects */}
         <div>
-          <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+          <label htmlFor="profile-projects" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
             Projects Portfolio
           </label>
           <textarea
+            id="profile-projects"
             rows={3}
             value={projects}
             onChange={(e) => setProjects(e.target.value)}

@@ -14,6 +14,7 @@ import { runLearningCuratorAgent } from '../agents/learningCuratorAgent.js';
 import { runProgressMonitorAgent } from '../agents/progressMonitorAgent.js';
 import { chatWithMentor, generateAdaptiveAlert } from '../agents/mentorAgent.js';
 import { runResumeArchitectAgent, generateSmartAtsResume } from '../agents/resumeAgent.js';
+import { invalidateUserCache } from '../middleware/efficiency.js';
 
 const router = express.Router();
 
@@ -297,6 +298,7 @@ router.put('/profile', async (req, res) => {
     }
 
     saveStudentData(req.userId, req.student);
+    invalidateUserCache(req.userId);
 
     res.json({
       success: true,
@@ -368,6 +370,7 @@ router.post('/onboarding', async (req, res) => {
     });
 
     saveStudentData(req.userId, req.student);
+    invalidateUserCache(req.userId);
 
     res.json({
       success: true,
@@ -425,6 +428,7 @@ router.post('/roadmap/complete', (req, res) => {
   if (step) {
     step.completed = completed !== undefined ? completed : true;
     saveStudentData(req.userId, req.student);
+    invalidateUserCache(req.userId);
   }
   res.json({
     success: true,
@@ -557,6 +561,7 @@ router.post('/quiz/:skill/submit', async (req, res) => {
     }
 
     saveStudentData(req.userId, req.student);
+    invalidateUserCache(req.userId);
 
     res.json({
       success: true,
@@ -613,6 +618,7 @@ router.post('/mentor/chat', async (req, res) => {
     });
 
     saveStudentData(req.userId, req.student);
+    invalidateUserCache(req.userId);
 
     res.json({
       success: true,
@@ -742,6 +748,7 @@ router.post('/resume/generate', async (req, res) => {
     });
 
     saveStudentData(req.userId, req.student);
+    invalidateUserCache(req.userId);
 
     res.json({
       success: true,
@@ -763,6 +770,7 @@ router.put('/resume', (req, res) => {
       updatedAt: new Date().toISOString(),
     };
     saveStudentData(req.userId, req.student);
+    invalidateUserCache(req.userId);
     res.json({ success: true, resume: req.student.resume });
   } catch (err) {
     res.status(500).json({ success: false, error: 'Failed to update resume' });

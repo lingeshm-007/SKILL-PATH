@@ -1,5 +1,5 @@
 {
-  "activeUserId": "user-1794643200981",
+  "activeUserId": "user-1794651781994",
   "users": {
     "user-lingesh": {
       "profile": {
@@ -868,6 +868,1402 @@
           "timestamp": "01:30 PM"
         }
       ]
+    },
+    "user-1794650511150": {
+      "profile": {
+        "id": "user-1794650511150",
+        "name": "Integration Test Learner",
+        "email": "test.student.1794650511148@gmail.com",
+        "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Integration Test Learner",
+        "currentSkills": [
+          "Python",
+          "SQL",
+          "HTML"
+        ],
+        "certifications": "Google Certified Student",
+        "projects": "Independent Web Project",
+        "targetCareer": "Full Stack Developer",
+        "createdAt": "2026-11-14T10:01:51.152Z"
+      },
+      "analysis": {
+        "strengths": [
+          "Foundational knowledge in Python",
+          "Foundational knowledge in SQL",
+          "Foundational knowledge in HTML"
+        ],
+        "weaknesses": [
+          "Limited hands-on production experience in JavaScript",
+          "End-to-end architecture integration missing for Full Stack Developer",
+          "Lack of verified automated testing and containerized deployments"
+        ],
+        "gaps": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "MongoDB",
+          "REST APIs",
+          "CSS",
+          "Git",
+          "TypeScript"
+        ],
+        "meta": {
+          "agent": "Skill Analyzer Agent",
+          "model": "SkillPath AI Conversational Brain",
+          "source": "smart-engine",
+          "timestamp": "03:31 PM"
+        }
+      },
+      "matching": {
+        "matchPercentage": 25,
+        "requiredSkills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "SQL",
+          "REST APIs",
+          "Git"
+        ],
+        "userHas": [
+          "Python",
+          "SQL",
+          "HTML"
+        ],
+        "userMissing": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "MongoDB",
+          "REST APIs",
+          "CSS",
+          "Git",
+          "TypeScript"
+        ],
+        "meta": {
+          "agent": "Career Matcher Agent",
+          "model": "SkillPath AI Conversational Brain",
+          "source": "smart-engine",
+          "timestamp": "03:31 PM"
+        }
+      },
+      "roadmap": [
+        {
+          "id": "rec-1794650511152-0",
+          "skill": "JavaScript",
+          "course": "JavaScript Algorithms and Data Structures Certification",
+          "platform": "freeCodeCamp",
+          "duration": "15 hours",
+          "difficulty": "Beginner to Intermediate",
+          "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650511152-1",
+          "skill": "React",
+          "course": "React Official Documentation & Interactive Deep Dive",
+          "platform": "React.dev",
+          "duration": "10 hours",
+          "difficulty": "Intermediate",
+          "url": "https://react.dev/learn",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650511152-2",
+          "skill": "Node.js",
+          "course": "Node.js & Express Crash Course",
+          "platform": "Traversy Media / YouTube",
+          "duration": "6 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.youtube.com/watch?v=fBNz5xF-Kx4",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650511152-3",
+          "skill": "MongoDB",
+          "course": "Introduction to MongoDB & Aggregation Framework",
+          "platform": "MongoDB University",
+          "duration": "8 hours",
+          "difficulty": "Beginner to Intermediate",
+          "url": "https://learn.mongodb.com/",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650511152-4",
+          "skill": "REST APIs",
+          "course": "Mastering RESTful API Architecture & Postman",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "5 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org/news/build-a-restful-api/",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650511152-5",
+          "skill": "CSS",
+          "course": "CSS Essential Masterclass & Best Practices",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "8 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650511152-6",
+          "skill": "Git",
+          "course": "Git Essential Masterclass & Best Practices",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "8 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650511152-7",
+          "skill": "TypeScript",
+          "course": "TypeScript Essential Masterclass & Best Practices",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "8 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "isRemediation": false
+        }
+      ],
+      "quizScores": [],
+      "mentorMessages": [
+        {
+          "id": "msg-1794650511152",
+          "role": "mentor",
+          "content": "Welcome to SkillPath AI, Integration Test Learner! I have personalized your interface for Full Stack Developer. Our AI agents identified 8 target gaps and drafted your custom roadmap!",
+          "timestamp": "03:31 PM",
+          "sender": "Mentor Agent"
+        },
+        {
+          "id": "msg-user-1794650511167",
+          "role": "user",
+          "content": "What are the main concepts in Express.js?",
+          "timestamp": "03:31 PM"
+        },
+        {
+          "id": "msg-mentor-1794650511167",
+          "role": "mentor",
+          "content": "### Flash Pro's Answer for Integration Test Learner:\n\nRegarding your query: **\"What are the main concepts in Express.js?\"**\n\nAs your AI mentor for **Full Stack Developer**, here is a structured breakdown:\n\n1. **Core Concept**:\n   In modern software engineering, addressing this effectively requires understanding the underlying data flow and architecture. Whether you are dealing with frontend interfaces or backend services, modularity and clean separation of concerns are key.\n\n2. **Practical Application**:\n   When implementing this in your projects:\n   - Always validate inputs at the API boundary.\n   - Use structured error handling (try/catch blocks with clear HTTP status codes).\n   - Test your logic with unit tests and isolated mock data.\n\n3. **Recommended Next Step**:\n   You are currently working towards **Full Stack Developer** with key gaps in **JavaScript, React, Node.js**. \n\nWould you like me to:\n- Show you a **code example** for this?\n- Break this down into **step-by-step beginner notes**?\n- Or explain how this topic appears in **technical interviews**?",
+          "timestamp": "03:31 PM",
+          "sender": "Mentor Agent"
+        }
+      ],
+      "agentLogs": [
+        {
+          "id": "log-1794650511163",
+          "agent": "Resume Architect Agent",
+          "action": "Resume Architect Agent ran at 03:31 PM — ATS Score: 96%",
+          "detail": "Engineered tailored ATS resume for \"Full Stack Developer\" with 12 matched keywords",
+          "status": "success",
+          "timestamp": "03:31 PM"
+        },
+        {
+          "id": "log-1794650511159-334",
+          "agent": "Progress Monitor Agent",
+          "action": "Progress Monitor Agent generated 3 MCQ questions for generate at 03:31 PM",
+          "detail": "Prepared quiz for learner Integration Test Learner",
+          "status": "success",
+          "timestamp": "03:31 PM"
+        },
+        {
+          "id": "log-1794650511152",
+          "agent": "Skill Analyzer Agent",
+          "action": "Skill Analyzer Agent initialized profile for Integration Test Learner at 03:31 PM",
+          "detail": "Identified gaps for Full Stack Developer: JavaScript, React, Node.js, MongoDB, REST APIs, CSS, Git, TypeScript",
+          "status": "success",
+          "timestamp": "03:31 PM"
+        }
+      ],
+      "resume": {
+        "targetRole": "Full Stack Developer",
+        "atsScore": 96,
+        "matchedKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "React.js",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "SQL",
+          "RESTful APIs",
+          "Git",
+          "HTML5",
+          "Tailwind CSS",
+          "Docker"
+        ],
+        "missingKeywords": [
+          "GraphQL",
+          "Redis",
+          "Microservices"
+        ],
+        "summary": "Versatile and ambitious Full Stack Developer with proven competency across modern frontend and backend web architectures. Proficient in developing scalable RESTful microservices with Node.js/Express, creating high-performance declarative user interfaces in React, and architecting normalized relational and NoSQL databases. Passionate about clean code, modular component design, and delivering seamless user experiences.",
+        "skills": {
+          "languages": [
+            "JavaScript (ES6+)",
+            "TypeScript",
+            "Python",
+            "SQL",
+            "HTML5/CSS3"
+          ],
+          "frameworks": [
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "Tailwind CSS",
+            "Redux Toolkit",
+            "Next.js"
+          ],
+          "databasesAndCloud": [
+            "MongoDB (Mongoose)",
+            "PostgreSQL",
+            "MySQL",
+            "Firebase",
+            "AWS (S3, EC2)"
+          ],
+          "toolsAndPractices": [
+            "Git/GitHub",
+            "Docker",
+            "Postman",
+            "Webpack/Vite",
+            "RESTful APIs",
+            "Agile/Scrum",
+            "CI/CD"
+          ]
+        },
+        "projects": [
+          {
+            "name": "SkillPath AI - Multi-Agent Personalized Learning Platform",
+            "role": "Full Stack Architect & Developer",
+            "duration": "3 Months",
+            "techStack": [
+              "React",
+              "Node.js",
+              "Express",
+              "Tailwind CSS",
+              "Claude API",
+              "REST APIs"
+            ],
+            "highlights": [
+              "Architected an end-to-end full-stack web application orchestrating 5 collaborating AI agents for real-time skill gap analysis and automated roadmap curation.",
+              "Built responsive single-page interfaces in React with Tailwind CSS, delivering 95+ Google Lighthouse performance scores and instant client-side state transitions.",
+              "Engineered resilient Express.js REST API endpoints with robust error handling, JSON data validation, and sub-100ms request lifecycle response times."
+            ]
+          },
+          {
+            "name": "Full-Stack E-Commerce & Inventory Management System",
+            "role": "Full Stack Developer",
+            "duration": "2 Months",
+            "techStack": [
+              "JavaScript",
+              "React.js",
+              "Node.js",
+              "MongoDB",
+              "Express",
+              "JWT"
+            ],
+            "highlights": [
+              "Engineered a scalable RESTful backend service with JWT role-based authentication, handling 1,000+ simultaneous product catalog requests.",
+              "Designed high-throughput MongoDB aggregation pipelines for real-time inventory tracking, search filtering, and shopping cart persistence.",
+              "Implemented modular React components with context state management, reducing code redundancy across dashboard pages by 40%."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree": "Bachelor of Technology in Computer Science & Engineering",
+            "institution": "Regional Technical University",
+            "year": "2022 - 2026",
+            "gpaOrHonors": "CGPA: 8.9 / 10.0 • Academic Merit Scholar"
+          }
+        ],
+        "certifications": [
+          "freeCodeCamp Full Stack Developer Certification",
+          "Meta Frontend Developer Professional Certificate",
+          "MongoDB Certified Associate Developer"
+        ],
+        "atsTips": [
+          "ATS score 96/100 passes automated screening for Full Stack and Software Engineering roles.",
+          "Strong action verbs (Architected, Engineered, Designed, Implemented) pass applicant scoring models.",
+          "Includes both frontend (React, Tailwind) and backend (Node, Express, MongoDB, REST) core keywords."
+        ],
+        "meta": {
+          "agent": "Resume Architect Agent",
+          "model": "SkillPath AI ATS Knowledge Brain",
+          "source": "smart-engine",
+          "timestamp": "03:31 PM"
+        },
+        "contact": {
+          "name": "Integration Test Learner",
+          "email": "test.student.1794650511148@gmail.com",
+          "phone": "+91 98765 43210",
+          "location": "Bengaluru, India",
+          "portfolioUrl": "https://integrationtestlearner.dev",
+          "githubUrl": "https://github.com/integrationtestlearner",
+          "linkedinUrl": "https://linkedin.com/in/integration-test-learner"
+        },
+        "updatedAt": "2026-11-14T10:01:51.163Z"
+      }
+    },
+    "user-1794650598354": {
+      "profile": {
+        "id": "user-1794650598354",
+        "name": "Integration Test Learner",
+        "email": "test.student.1794650598352@gmail.com",
+        "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Integration Test Learner",
+        "currentSkills": [
+          "Python",
+          "SQL",
+          "HTML"
+        ],
+        "certifications": "Google Certified Student",
+        "projects": "Independent Web Project",
+        "targetCareer": "Full Stack Developer",
+        "createdAt": "2026-11-14T10:03:18.355Z"
+      },
+      "analysis": {
+        "strengths": [
+          "Foundational knowledge in Python",
+          "Foundational knowledge in SQL",
+          "Foundational knowledge in HTML"
+        ],
+        "weaknesses": [
+          "Limited hands-on production experience in JavaScript",
+          "End-to-end architecture integration missing for Full Stack Developer",
+          "Lack of verified automated testing and containerized deployments"
+        ],
+        "gaps": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "MongoDB",
+          "REST APIs",
+          "CSS",
+          "Git",
+          "TypeScript"
+        ],
+        "meta": {
+          "agent": "Skill Analyzer Agent",
+          "model": "SkillPath AI Conversational Brain",
+          "source": "smart-engine",
+          "timestamp": "03:33 PM"
+        }
+      },
+      "matching": {
+        "matchPercentage": 25,
+        "requiredSkills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "SQL",
+          "REST APIs",
+          "Git"
+        ],
+        "userHas": [
+          "Python",
+          "SQL",
+          "HTML"
+        ],
+        "userMissing": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "MongoDB",
+          "REST APIs",
+          "CSS",
+          "Git",
+          "TypeScript"
+        ],
+        "meta": {
+          "agent": "Career Matcher Agent",
+          "model": "SkillPath AI Conversational Brain",
+          "source": "smart-engine",
+          "timestamp": "03:33 PM"
+        }
+      },
+      "roadmap": [
+        {
+          "id": "rec-1794650598355-0",
+          "skill": "JavaScript",
+          "course": "JavaScript Algorithms and Data Structures Certification",
+          "platform": "freeCodeCamp",
+          "duration": "15 hours",
+          "difficulty": "Beginner to Intermediate",
+          "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650598355-1",
+          "skill": "React",
+          "course": "React Official Documentation & Interactive Deep Dive",
+          "platform": "React.dev",
+          "duration": "10 hours",
+          "difficulty": "Intermediate",
+          "url": "https://react.dev/learn",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650598355-2",
+          "skill": "Node.js",
+          "course": "Node.js & Express Crash Course",
+          "platform": "Traversy Media / YouTube",
+          "duration": "6 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.youtube.com/watch?v=fBNz5xF-Kx4",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650598355-3",
+          "skill": "MongoDB",
+          "course": "Introduction to MongoDB & Aggregation Framework",
+          "platform": "MongoDB University",
+          "duration": "8 hours",
+          "difficulty": "Beginner to Intermediate",
+          "url": "https://learn.mongodb.com/",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650598355-4",
+          "skill": "REST APIs",
+          "course": "Mastering RESTful API Architecture & Postman",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "5 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org/news/build-a-restful-api/",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650598355-5",
+          "skill": "CSS",
+          "course": "CSS Essential Masterclass & Best Practices",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "8 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650598355-6",
+          "skill": "Git",
+          "course": "Git Essential Masterclass & Best Practices",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "8 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650598355-7",
+          "skill": "TypeScript",
+          "course": "TypeScript Essential Masterclass & Best Practices",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "8 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "isRemediation": false
+        }
+      ],
+      "quizScores": [],
+      "mentorMessages": [
+        {
+          "id": "msg-1794650598355",
+          "role": "mentor",
+          "content": "Welcome to SkillPath AI, Integration Test Learner! I have personalized your interface for Full Stack Developer. Our AI agents identified 8 target gaps and drafted your custom roadmap!",
+          "timestamp": "03:33 PM",
+          "sender": "Mentor Agent"
+        },
+        {
+          "id": "msg-user-1794650598369",
+          "role": "user",
+          "content": "What are the main concepts in Express.js?",
+          "timestamp": "03:33 PM"
+        },
+        {
+          "id": "msg-mentor-1794650598370",
+          "role": "mentor",
+          "content": "### Flash Pro's Answer for Integration Test Learner:\n\nRegarding your query: **\"What are the main concepts in Express.js?\"**\n\nAs your AI mentor for **Full Stack Developer**, here is a structured breakdown:\n\n1. **Core Concept**:\n   In modern software engineering, addressing this effectively requires understanding the underlying data flow and architecture. Whether you are dealing with frontend interfaces or backend services, modularity and clean separation of concerns are key.\n\n2. **Practical Application**:\n   When implementing this in your projects:\n   - Always validate inputs at the API boundary.\n   - Use structured error handling (try/catch blocks with clear HTTP status codes).\n   - Test your logic with unit tests and isolated mock data.\n\n3. **Recommended Next Step**:\n   You are currently working towards **Full Stack Developer** with key gaps in **JavaScript, React, Node.js**. \n\nWould you like me to:\n- Show you a **code example** for this?\n- Break this down into **step-by-step beginner notes**?\n- Or explain how this topic appears in **technical interviews**?",
+          "timestamp": "03:33 PM",
+          "sender": "Mentor Agent"
+        }
+      ],
+      "agentLogs": [
+        {
+          "id": "log-1794650598365",
+          "agent": "Resume Architect Agent",
+          "action": "Resume Architect Agent ran at 03:33 PM — ATS Score: 96%",
+          "detail": "Engineered tailored ATS resume for \"Full Stack Developer\" with 12 matched keywords",
+          "status": "success",
+          "timestamp": "03:33 PM"
+        },
+        {
+          "id": "log-1794650598362-130",
+          "agent": "Progress Monitor Agent",
+          "action": "Progress Monitor Agent generated 3 MCQ questions for JavaScript at 03:33 PM",
+          "detail": "Prepared quiz for learner Integration Test Learner",
+          "status": "success",
+          "timestamp": "03:33 PM"
+        },
+        {
+          "id": "log-1794650598355",
+          "agent": "Skill Analyzer Agent",
+          "action": "Skill Analyzer Agent initialized profile for Integration Test Learner at 03:33 PM",
+          "detail": "Identified gaps for Full Stack Developer: JavaScript, React, Node.js, MongoDB, REST APIs, CSS, Git, TypeScript",
+          "status": "success",
+          "timestamp": "03:33 PM"
+        }
+      ],
+      "resume": {
+        "targetRole": "Full Stack Developer",
+        "atsScore": 96,
+        "matchedKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "React.js",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "SQL",
+          "RESTful APIs",
+          "Git",
+          "HTML5",
+          "Tailwind CSS",
+          "Docker"
+        ],
+        "missingKeywords": [
+          "GraphQL",
+          "Redis",
+          "Microservices"
+        ],
+        "summary": "Versatile and ambitious Full Stack Developer with proven competency across modern frontend and backend web architectures. Proficient in developing scalable RESTful microservices with Node.js/Express, creating high-performance declarative user interfaces in React, and architecting normalized relational and NoSQL databases. Passionate about clean code, modular component design, and delivering seamless user experiences.",
+        "skills": {
+          "languages": [
+            "JavaScript (ES6+)",
+            "TypeScript",
+            "Python",
+            "SQL",
+            "HTML5/CSS3"
+          ],
+          "frameworks": [
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "Tailwind CSS",
+            "Redux Toolkit",
+            "Next.js"
+          ],
+          "databasesAndCloud": [
+            "MongoDB (Mongoose)",
+            "PostgreSQL",
+            "MySQL",
+            "Firebase",
+            "AWS (S3, EC2)"
+          ],
+          "toolsAndPractices": [
+            "Git/GitHub",
+            "Docker",
+            "Postman",
+            "Webpack/Vite",
+            "RESTful APIs",
+            "Agile/Scrum",
+            "CI/CD"
+          ]
+        },
+        "projects": [
+          {
+            "name": "SkillPath AI - Multi-Agent Personalized Learning Platform",
+            "role": "Full Stack Architect & Developer",
+            "duration": "3 Months",
+            "techStack": [
+              "React",
+              "Node.js",
+              "Express",
+              "Tailwind CSS",
+              "Claude API",
+              "REST APIs"
+            ],
+            "highlights": [
+              "Architected an end-to-end full-stack web application orchestrating 5 collaborating AI agents for real-time skill gap analysis and automated roadmap curation.",
+              "Built responsive single-page interfaces in React with Tailwind CSS, delivering 95+ Google Lighthouse performance scores and instant client-side state transitions.",
+              "Engineered resilient Express.js REST API endpoints with robust error handling, JSON data validation, and sub-100ms request lifecycle response times."
+            ]
+          },
+          {
+            "name": "Full-Stack E-Commerce & Inventory Management System",
+            "role": "Full Stack Developer",
+            "duration": "2 Months",
+            "techStack": [
+              "JavaScript",
+              "React.js",
+              "Node.js",
+              "MongoDB",
+              "Express",
+              "JWT"
+            ],
+            "highlights": [
+              "Engineered a scalable RESTful backend service with JWT role-based authentication, handling 1,000+ simultaneous product catalog requests.",
+              "Designed high-throughput MongoDB aggregation pipelines for real-time inventory tracking, search filtering, and shopping cart persistence.",
+              "Implemented modular React components with context state management, reducing code redundancy across dashboard pages by 40%."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree": "Bachelor of Technology in Computer Science & Engineering",
+            "institution": "Regional Technical University",
+            "year": "2022 - 2026",
+            "gpaOrHonors": "CGPA: 8.9 / 10.0 • Academic Merit Scholar"
+          }
+        ],
+        "certifications": [
+          "freeCodeCamp Full Stack Developer Certification",
+          "Meta Frontend Developer Professional Certificate",
+          "MongoDB Certified Associate Developer"
+        ],
+        "atsTips": [
+          "ATS score 96/100 passes automated screening for Full Stack and Software Engineering roles.",
+          "Strong action verbs (Architected, Engineered, Designed, Implemented) pass applicant scoring models.",
+          "Includes both frontend (React, Tailwind) and backend (Node, Express, MongoDB, REST) core keywords."
+        ],
+        "meta": {
+          "agent": "Resume Architect Agent",
+          "model": "SkillPath AI ATS Knowledge Brain",
+          "source": "smart-engine",
+          "timestamp": "03:33 PM"
+        },
+        "contact": {
+          "name": "Integration Test Learner",
+          "email": "test.student.1794650598352@gmail.com",
+          "phone": "+91 98765 43210",
+          "location": "Bengaluru, India",
+          "portfolioUrl": "https://integrationtestlearner.dev",
+          "githubUrl": "https://github.com/integrationtestlearner",
+          "linkedinUrl": "https://linkedin.com/in/integration-test-learner"
+        },
+        "updatedAt": "2026-11-14T10:03:18.365Z"
+      }
+    },
+    "user-1794650635926": {
+      "profile": {
+        "id": "user-1794650635926",
+        "name": "Integration Test Learner",
+        "email": "test.student.1794650635924@gmail.com",
+        "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Integration Test Learner",
+        "currentSkills": [
+          "Python",
+          "SQL",
+          "HTML"
+        ],
+        "certifications": "Google Certified Student",
+        "projects": "Independent Web Project",
+        "targetCareer": "Full Stack Developer",
+        "createdAt": "2026-11-14T10:03:55.928Z"
+      },
+      "analysis": {
+        "strengths": [
+          "Foundational knowledge in Python",
+          "Foundational knowledge in SQL",
+          "Foundational knowledge in HTML"
+        ],
+        "weaknesses": [
+          "Limited hands-on production experience in JavaScript",
+          "End-to-end architecture integration missing for Full Stack Developer",
+          "Lack of verified automated testing and containerized deployments"
+        ],
+        "gaps": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "MongoDB",
+          "REST APIs",
+          "CSS",
+          "Git",
+          "TypeScript"
+        ],
+        "meta": {
+          "agent": "Skill Analyzer Agent",
+          "model": "SkillPath AI Conversational Brain",
+          "source": "smart-engine",
+          "timestamp": "03:33 PM"
+        }
+      },
+      "matching": {
+        "matchPercentage": 25,
+        "requiredSkills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "SQL",
+          "REST APIs",
+          "Git"
+        ],
+        "userHas": [
+          "Python",
+          "SQL",
+          "HTML"
+        ],
+        "userMissing": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "MongoDB",
+          "REST APIs",
+          "CSS",
+          "Git",
+          "TypeScript"
+        ],
+        "meta": {
+          "agent": "Career Matcher Agent",
+          "model": "SkillPath AI Conversational Brain",
+          "source": "smart-engine",
+          "timestamp": "03:33 PM"
+        }
+      },
+      "roadmap": [
+        {
+          "id": "rec-1794650635928-0",
+          "skill": "JavaScript",
+          "course": "JavaScript Algorithms and Data Structures Certification",
+          "platform": "freeCodeCamp",
+          "duration": "15 hours",
+          "difficulty": "Beginner to Intermediate",
+          "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650635928-1",
+          "skill": "React",
+          "course": "React Official Documentation & Interactive Deep Dive",
+          "platform": "React.dev",
+          "duration": "10 hours",
+          "difficulty": "Intermediate",
+          "url": "https://react.dev/learn",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650635928-2",
+          "skill": "Node.js",
+          "course": "Node.js & Express Crash Course",
+          "platform": "Traversy Media / YouTube",
+          "duration": "6 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.youtube.com/watch?v=fBNz5xF-Kx4",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650635928-3",
+          "skill": "MongoDB",
+          "course": "Introduction to MongoDB & Aggregation Framework",
+          "platform": "MongoDB University",
+          "duration": "8 hours",
+          "difficulty": "Beginner to Intermediate",
+          "url": "https://learn.mongodb.com/",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650635928-4",
+          "skill": "REST APIs",
+          "course": "Mastering RESTful API Architecture & Postman",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "5 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org/news/build-a-restful-api/",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650635928-5",
+          "skill": "CSS",
+          "course": "CSS Essential Masterclass & Best Practices",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "8 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650635928-6",
+          "skill": "Git",
+          "course": "Git Essential Masterclass & Best Practices",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "8 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794650635928-7",
+          "skill": "TypeScript",
+          "course": "TypeScript Essential Masterclass & Best Practices",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "8 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "isRemediation": false
+        }
+      ],
+      "quizScores": [],
+      "mentorMessages": [
+        {
+          "id": "msg-1794650635928",
+          "role": "mentor",
+          "content": "Welcome to SkillPath AI, Integration Test Learner! I have personalized your interface for Full Stack Developer. Our AI agents identified 8 target gaps and drafted your custom roadmap!",
+          "timestamp": "03:33 PM",
+          "sender": "Mentor Agent"
+        },
+        {
+          "id": "msg-user-1794650635942",
+          "role": "user",
+          "content": "What are the main concepts in Express.js?",
+          "timestamp": "03:33 PM"
+        },
+        {
+          "id": "msg-mentor-1794650635943",
+          "role": "mentor",
+          "content": "### Flash Pro's Answer for Integration Test Learner:\n\nRegarding your query: **\"What are the main concepts in Express.js?\"**\n\nAs your AI mentor for **Full Stack Developer**, here is a structured breakdown:\n\n1. **Core Concept**:\n   In modern software engineering, addressing this effectively requires understanding the underlying data flow and architecture. Whether you are dealing with frontend interfaces or backend services, modularity and clean separation of concerns are key.\n\n2. **Practical Application**:\n   When implementing this in your projects:\n   - Always validate inputs at the API boundary.\n   - Use structured error handling (try/catch blocks with clear HTTP status codes).\n   - Test your logic with unit tests and isolated mock data.\n\n3. **Recommended Next Step**:\n   You are currently working towards **Full Stack Developer** with key gaps in **JavaScript, React, Node.js**. \n\nWould you like me to:\n- Show you a **code example** for this?\n- Break this down into **step-by-step beginner notes**?\n- Or explain how this topic appears in **technical interviews**?",
+          "timestamp": "03:33 PM",
+          "sender": "Mentor Agent"
+        }
+      ],
+      "agentLogs": [
+        {
+          "id": "log-1794650635939",
+          "agent": "Resume Architect Agent",
+          "action": "Resume Architect Agent ran at 03:33 PM — ATS Score: 96%",
+          "detail": "Engineered tailored ATS resume for \"Full Stack Developer\" with 12 matched keywords",
+          "status": "success",
+          "timestamp": "03:33 PM"
+        },
+        {
+          "id": "log-1794650635936-321",
+          "agent": "Progress Monitor Agent",
+          "action": "Progress Monitor Agent generated 3 MCQ questions for JavaScript at 03:33 PM",
+          "detail": "Prepared quiz for learner Integration Test Learner",
+          "status": "success",
+          "timestamp": "03:33 PM"
+        },
+        {
+          "id": "log-1794650635928",
+          "agent": "Skill Analyzer Agent",
+          "action": "Skill Analyzer Agent initialized profile for Integration Test Learner at 03:33 PM",
+          "detail": "Identified gaps for Full Stack Developer: JavaScript, React, Node.js, MongoDB, REST APIs, CSS, Git, TypeScript",
+          "status": "success",
+          "timestamp": "03:33 PM"
+        }
+      ],
+      "resume": {
+        "targetRole": "Full Stack Developer",
+        "atsScore": 96,
+        "matchedKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "React.js",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "SQL",
+          "RESTful APIs",
+          "Git",
+          "HTML5",
+          "Tailwind CSS",
+          "Docker"
+        ],
+        "missingKeywords": [
+          "GraphQL",
+          "Redis",
+          "Microservices"
+        ],
+        "summary": "Versatile and ambitious Full Stack Developer with proven competency across modern frontend and backend web architectures. Proficient in developing scalable RESTful microservices with Node.js/Express, creating high-performance declarative user interfaces in React, and architecting normalized relational and NoSQL databases. Passionate about clean code, modular component design, and delivering seamless user experiences.",
+        "skills": {
+          "languages": [
+            "JavaScript (ES6+)",
+            "TypeScript",
+            "Python",
+            "SQL",
+            "HTML5/CSS3"
+          ],
+          "frameworks": [
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "Tailwind CSS",
+            "Redux Toolkit",
+            "Next.js"
+          ],
+          "databasesAndCloud": [
+            "MongoDB (Mongoose)",
+            "PostgreSQL",
+            "MySQL",
+            "Firebase",
+            "AWS (S3, EC2)"
+          ],
+          "toolsAndPractices": [
+            "Git/GitHub",
+            "Docker",
+            "Postman",
+            "Webpack/Vite",
+            "RESTful APIs",
+            "Agile/Scrum",
+            "CI/CD"
+          ]
+        },
+        "projects": [
+          {
+            "name": "SkillPath AI - Multi-Agent Personalized Learning Platform",
+            "role": "Full Stack Architect & Developer",
+            "duration": "3 Months",
+            "techStack": [
+              "React",
+              "Node.js",
+              "Express",
+              "Tailwind CSS",
+              "Claude API",
+              "REST APIs"
+            ],
+            "highlights": [
+              "Architected an end-to-end full-stack web application orchestrating 5 collaborating AI agents for real-time skill gap analysis and automated roadmap curation.",
+              "Built responsive single-page interfaces in React with Tailwind CSS, delivering 95+ Google Lighthouse performance scores and instant client-side state transitions.",
+              "Engineered resilient Express.js REST API endpoints with robust error handling, JSON data validation, and sub-100ms request lifecycle response times."
+            ]
+          },
+          {
+            "name": "Full-Stack E-Commerce & Inventory Management System",
+            "role": "Full Stack Developer",
+            "duration": "2 Months",
+            "techStack": [
+              "JavaScript",
+              "React.js",
+              "Node.js",
+              "MongoDB",
+              "Express",
+              "JWT"
+            ],
+            "highlights": [
+              "Engineered a scalable RESTful backend service with JWT role-based authentication, handling 1,000+ simultaneous product catalog requests.",
+              "Designed high-throughput MongoDB aggregation pipelines for real-time inventory tracking, search filtering, and shopping cart persistence.",
+              "Implemented modular React components with context state management, reducing code redundancy across dashboard pages by 40%."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree": "Bachelor of Technology in Computer Science & Engineering",
+            "institution": "Regional Technical University",
+            "year": "2022 - 2026",
+            "gpaOrHonors": "CGPA: 8.9 / 10.0 • Academic Merit Scholar"
+          }
+        ],
+        "certifications": [
+          "freeCodeCamp Full Stack Developer Certification",
+          "Meta Frontend Developer Professional Certificate",
+          "MongoDB Certified Associate Developer"
+        ],
+        "atsTips": [
+          "ATS score 96/100 passes automated screening for Full Stack and Software Engineering roles.",
+          "Strong action verbs (Architected, Engineered, Designed, Implemented) pass applicant scoring models.",
+          "Includes both frontend (React, Tailwind) and backend (Node, Express, MongoDB, REST) core keywords."
+        ],
+        "meta": {
+          "agent": "Resume Architect Agent",
+          "model": "SkillPath AI ATS Knowledge Brain",
+          "source": "smart-engine",
+          "timestamp": "03:33 PM"
+        },
+        "contact": {
+          "name": "Integration Test Learner",
+          "email": "test.student.1794650635924@gmail.com",
+          "phone": "+91 98765 43210",
+          "location": "Bengaluru, India",
+          "portfolioUrl": "https://integrationtestlearner.dev",
+          "githubUrl": "https://github.com/integrationtestlearner",
+          "linkedinUrl": "https://linkedin.com/in/integration-test-learner"
+        },
+        "updatedAt": "2026-11-14T10:03:55.939Z"
+      }
+    },
+    "user-1794651781994": {
+      "profile": {
+        "id": "user-1794651781994",
+        "name": "Integration Test Learner",
+        "email": "test.student.1794651781993@gmail.com",
+        "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Integration Test Learner",
+        "currentSkills": [
+          "Python",
+          "SQL",
+          "HTML"
+        ],
+        "certifications": "Google Certified Student",
+        "projects": "Independent Web Project",
+        "targetCareer": "Full Stack Developer",
+        "createdAt": "2026-11-14T10:23:01.995Z"
+      },
+      "analysis": {
+        "strengths": [
+          "Foundational knowledge in Python",
+          "Foundational knowledge in SQL",
+          "Foundational knowledge in HTML"
+        ],
+        "weaknesses": [
+          "Limited hands-on production experience in JavaScript",
+          "End-to-end architecture integration missing for Full Stack Developer",
+          "Lack of verified automated testing and containerized deployments"
+        ],
+        "gaps": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "MongoDB",
+          "REST APIs",
+          "CSS",
+          "Git",
+          "TypeScript"
+        ],
+        "meta": {
+          "agent": "Skill Analyzer Agent",
+          "model": "SkillPath AI Conversational Brain",
+          "source": "smart-engine",
+          "timestamp": "03:53 PM"
+        }
+      },
+      "matching": {
+        "matchPercentage": 25,
+        "requiredSkills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "SQL",
+          "REST APIs",
+          "Git"
+        ],
+        "userHas": [
+          "Python",
+          "SQL",
+          "HTML"
+        ],
+        "userMissing": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "MongoDB",
+          "REST APIs",
+          "CSS",
+          "Git",
+          "TypeScript"
+        ],
+        "meta": {
+          "agent": "Career Matcher Agent",
+          "model": "SkillPath AI Conversational Brain",
+          "source": "smart-engine",
+          "timestamp": "03:53 PM"
+        }
+      },
+      "roadmap": [
+        {
+          "id": "rec-1794651781995-0",
+          "skill": "JavaScript",
+          "course": "JavaScript Algorithms and Data Structures Certification",
+          "platform": "freeCodeCamp",
+          "duration": "15 hours",
+          "difficulty": "Beginner to Intermediate",
+          "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794651781995-1",
+          "skill": "React",
+          "course": "React Official Documentation & Interactive Deep Dive",
+          "platform": "React.dev",
+          "duration": "10 hours",
+          "difficulty": "Intermediate",
+          "url": "https://react.dev/learn",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794651781995-2",
+          "skill": "Node.js",
+          "course": "Node.js & Express Crash Course",
+          "platform": "Traversy Media / YouTube",
+          "duration": "6 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.youtube.com/watch?v=fBNz5xF-Kx4",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794651781995-3",
+          "skill": "MongoDB",
+          "course": "Introduction to MongoDB & Aggregation Framework",
+          "platform": "MongoDB University",
+          "duration": "8 hours",
+          "difficulty": "Beginner to Intermediate",
+          "url": "https://learn.mongodb.com/",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794651781995-4",
+          "skill": "REST APIs",
+          "course": "Mastering RESTful API Architecture & Postman",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "5 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org/news/build-a-restful-api/",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794651781995-5",
+          "skill": "CSS",
+          "course": "CSS Essential Masterclass & Best Practices",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "8 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794651781995-6",
+          "skill": "Git",
+          "course": "Git Essential Masterclass & Best Practices",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "8 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794651781995-7",
+          "skill": "TypeScript",
+          "course": "TypeScript Essential Masterclass & Best Practices",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "8 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "isRemediation": false
+        }
+      ],
+      "quizScores": [],
+      "mentorMessages": [
+        {
+          "id": "msg-1794651781995",
+          "role": "mentor",
+          "content": "Welcome to SkillPath AI, Integration Test Learner! I have personalized your interface for Full Stack Developer. Our AI agents identified 8 target gaps and drafted your custom roadmap!",
+          "timestamp": "03:53 PM",
+          "sender": "Mentor Agent"
+        },
+        {
+          "id": "msg-user-1794651782004",
+          "role": "user",
+          "content": "What are the main concepts in Express.js?",
+          "timestamp": "03:53 PM"
+        },
+        {
+          "id": "msg-mentor-1794651782004",
+          "role": "mentor",
+          "content": "### Flash Pro's Answer for Integration Test Learner:\n\nRegarding your query: **\"What are the main concepts in Express.js?\"**\n\nAs your AI mentor for **Full Stack Developer**, here is a structured breakdown:\n\n1. **Core Concept**:\n   In modern software engineering, addressing this effectively requires understanding the underlying data flow and architecture. Whether you are dealing with frontend interfaces or backend services, modularity and clean separation of concerns are key.\n\n2. **Practical Application**:\n   When implementing this in your projects:\n   - Always validate inputs at the API boundary.\n   - Use structured error handling (try/catch blocks with clear HTTP status codes).\n   - Test your logic with unit tests and isolated mock data.\n\n3. **Recommended Next Step**:\n   You are currently working towards **Full Stack Developer** with key gaps in **JavaScript, React, Node.js**. \n\nWould you like me to:\n- Show you a **code example** for this?\n- Break this down into **step-by-step beginner notes**?\n- Or explain how this topic appears in **technical interviews**?",
+          "timestamp": "03:53 PM",
+          "sender": "Mentor Agent"
+        }
+      ],
+      "agentLogs": [
+        {
+          "id": "log-1794651782002",
+          "agent": "Resume Architect Agent",
+          "action": "Resume Architect Agent ran at 03:53 PM — ATS Score: 96%",
+          "detail": "Engineered tailored ATS resume for \"Full Stack Developer\" with 12 matched keywords",
+          "status": "success",
+          "timestamp": "03:53 PM"
+        },
+        {
+          "id": "log-1794651781999-804",
+          "agent": "Progress Monitor Agent",
+          "action": "Progress Monitor Agent generated 3 MCQ questions for JavaScript at 03:53 PM",
+          "detail": "Prepared quiz for learner Integration Test Learner",
+          "status": "success",
+          "timestamp": "03:53 PM"
+        },
+        {
+          "id": "log-1794651781995",
+          "agent": "Skill Analyzer Agent",
+          "action": "Skill Analyzer Agent initialized profile for Integration Test Learner at 03:53 PM",
+          "detail": "Identified gaps for Full Stack Developer: JavaScript, React, Node.js, MongoDB, REST APIs, CSS, Git, TypeScript",
+          "status": "success",
+          "timestamp": "03:53 PM"
+        }
+      ],
+      "resume": {
+        "targetRole": "Full Stack Developer",
+        "atsScore": 96,
+        "matchedKeywords": [
+          "JavaScript",
+          "TypeScript",
+          "React.js",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "SQL",
+          "RESTful APIs",
+          "Git",
+          "HTML5",
+          "Tailwind CSS",
+          "Docker"
+        ],
+        "missingKeywords": [
+          "GraphQL",
+          "Redis",
+          "Microservices"
+        ],
+        "summary": "Versatile and ambitious Full Stack Developer with proven competency across modern frontend and backend web architectures. Proficient in developing scalable RESTful microservices with Node.js/Express, creating high-performance declarative user interfaces in React, and architecting normalized relational and NoSQL databases. Passionate about clean code, modular component design, and delivering seamless user experiences.",
+        "skills": {
+          "languages": [
+            "JavaScript (ES6+)",
+            "TypeScript",
+            "Python",
+            "SQL",
+            "HTML5/CSS3"
+          ],
+          "frameworks": [
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "Tailwind CSS",
+            "Redux Toolkit",
+            "Next.js"
+          ],
+          "databasesAndCloud": [
+            "MongoDB (Mongoose)",
+            "PostgreSQL",
+            "MySQL",
+            "Firebase",
+            "AWS (S3, EC2)"
+          ],
+          "toolsAndPractices": [
+            "Git/GitHub",
+            "Docker",
+            "Postman",
+            "Webpack/Vite",
+            "RESTful APIs",
+            "Agile/Scrum",
+            "CI/CD"
+          ]
+        },
+        "projects": [
+          {
+            "name": "SkillPath AI - Multi-Agent Personalized Learning Platform",
+            "role": "Full Stack Architect & Developer",
+            "duration": "3 Months",
+            "techStack": [
+              "React",
+              "Node.js",
+              "Express",
+              "Tailwind CSS",
+              "Claude API",
+              "REST APIs"
+            ],
+            "highlights": [
+              "Architected an end-to-end full-stack web application orchestrating 5 collaborating AI agents for real-time skill gap analysis and automated roadmap curation.",
+              "Built responsive single-page interfaces in React with Tailwind CSS, delivering 95+ Google Lighthouse performance scores and instant client-side state transitions.",
+              "Engineered resilient Express.js REST API endpoints with robust error handling, JSON data validation, and sub-100ms request lifecycle response times."
+            ]
+          },
+          {
+            "name": "Full-Stack E-Commerce & Inventory Management System",
+            "role": "Full Stack Developer",
+            "duration": "2 Months",
+            "techStack": [
+              "JavaScript",
+              "React.js",
+              "Node.js",
+              "MongoDB",
+              "Express",
+              "JWT"
+            ],
+            "highlights": [
+              "Engineered a scalable RESTful backend service with JWT role-based authentication, handling 1,000+ simultaneous product catalog requests.",
+              "Designed high-throughput MongoDB aggregation pipelines for real-time inventory tracking, search filtering, and shopping cart persistence.",
+              "Implemented modular React components with context state management, reducing code redundancy across dashboard pages by 40%."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree": "Bachelor of Technology in Computer Science & Engineering",
+            "institution": "Regional Technical University",
+            "year": "2022 - 2026",
+            "gpaOrHonors": "CGPA: 8.9 / 10.0 • Academic Merit Scholar"
+          }
+        ],
+        "certifications": [
+          "freeCodeCamp Full Stack Developer Certification",
+          "Meta Frontend Developer Professional Certificate",
+          "MongoDB Certified Associate Developer"
+        ],
+        "atsTips": [
+          "ATS score 96/100 passes automated screening for Full Stack and Software Engineering roles.",
+          "Strong action verbs (Architected, Engineered, Designed, Implemented) pass applicant scoring models.",
+          "Includes both frontend (React, Tailwind) and backend (Node, Express, MongoDB, REST) core keywords."
+        ],
+        "meta": {
+          "agent": "Resume Architect Agent",
+          "model": "SkillPath AI ATS Knowledge Brain",
+          "source": "smart-engine",
+          "timestamp": "03:53 PM"
+        },
+        "contact": {
+          "name": "Integration Test Learner",
+          "email": "test.student.1794651781993@gmail.com",
+          "phone": "+91 98765 43210",
+          "location": "Bengaluru, India",
+          "portfolioUrl": "https://integrationtestlearner.dev",
+          "githubUrl": "https://github.com/integrationtestlearner",
+          "linkedinUrl": "https://linkedin.com/in/integration-test-learner"
+        },
+        "updatedAt": "2026-11-14T10:23:02.002Z"
+      }
     }
   },
   "settings": {

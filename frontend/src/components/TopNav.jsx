@@ -80,7 +80,7 @@ export default function TopNav() {
 
   return (
     <>
-      <header className="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-xs">
+      <header role="banner" className="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-xs">
         <div className="w-full max-w-[1600px] mx-auto px-3 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-14 sm:h-16 gap-2 sm:gap-4">
             
@@ -88,8 +88,9 @@ export default function TopNav() {
             <div className="flex items-center shrink-0">
               <button 
                 onClick={() => setActiveTab('dashboard')} 
-                className="flex items-center text-left group shrink-0 focus:outline-none"
+                className="flex items-center text-left group shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 rounded-lg"
                 title="SkillPath AI - Return to Dashboard"
+                aria-label="SkillPath AI Home - Return to Dashboard"
               >
                 <div className="flex items-baseline gap-1 whitespace-nowrap">
                   <span className="font-black text-slate-900 text-xl sm:text-2xl tracking-tight">
@@ -103,7 +104,7 @@ export default function TopNav() {
             </div>
 
             {/* Center: Navigation Tabs (Desktop only) */}
-            <nav className="hidden md:flex items-center space-x-1 shrink-0">
+            <nav role="navigation" aria-label="Desktop Primary Navigation" className="hidden md:flex items-center space-x-1 shrink-0">
               {navItems.map((item) => {
                 const Icon = item.icon;
                 const isActive = activeTab === item.id;
@@ -111,17 +112,19 @@ export default function TopNav() {
                   <button
                     key={item.id}
                     onClick={() => setActiveTab(item.id)}
-                    className={`relative px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all whitespace-nowrap ${
+                    aria-current={isActive ? 'page' : undefined}
+                    aria-label={`Go to ${item.label}`}
+                    className={`relative px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all whitespace-nowrap focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:outline-none ${
                       isActive
                         ? 'bg-indigo-50 text-indigo-700 border border-indigo-200 shadow-2xs font-bold'
                         : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
                     }`}
                   >
-                    <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-indigo-600' : 'text-slate-400'}`} />
+                    <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-indigo-600' : 'text-slate-400'}`} aria-hidden="true" />
                     <span>{item.label}</span>
 
                     {item.badge && mentorMessages.length > 1 && (
-                      <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 animate-pulse"></span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 animate-pulse" aria-hidden="true"></span>
                     )}
                   </button>
                 );
@@ -134,24 +137,26 @@ export default function TopNav() {
               {/* Optional AI Key Config (compact on desktop) */}
               <button
                 onClick={() => setShowKeyModal(true)}
-                className={`hidden lg:flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold rounded-lg border transition-colors whitespace-nowrap ${
+                aria-label="Configure Live AI Model API Key"
+                className={`hidden lg:flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold rounded-lg border transition-colors whitespace-nowrap focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:outline-none ${
                   keyStatus?.configured
                     ? 'bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100'
                     : 'bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200'
                 }`}
                 title="Configure Live Claude / Gemini / OpenAI Key"
               >
-                <Key className="w-3.5 h-3.5" />
+                <Key className="w-3.5 h-3.5" aria-hidden="true" />
                 <span>{keyStatus?.configured ? 'Live AI' : 'AI Key'}</span>
               </button>
 
               {/* Launch Flash Pro AI Mentor */}
               <button
                 onClick={() => setIsMentorDrawerOpen(true)}
-                className="flex items-center gap-1 px-2.5 sm:px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-sm shadow-indigo-300 transition-all active:scale-95"
+                aria-label="Ask Flash Pro AI Mentor Assistant"
+                className="flex items-center gap-1 px-2.5 sm:px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-sm shadow-indigo-300 transition-all active:scale-95 focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:outline-none"
                 title="Ask Flash Pro AI Mentor"
               >
-                <Bot className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-300 shrink-0" />
+                <Bot className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-300 shrink-0" aria-hidden="true" />
                 <span className="hidden xs:inline">Flash Pro</span>
               </button>
 
@@ -160,11 +165,14 @@ export default function TopNav() {
                 <div className="relative shrink-0">
                   <button
                     onClick={() => setShowUserDropdown(!showUserDropdown)}
-                    className="flex items-center gap-1.5 sm:gap-2 p-1 sm:pl-1.5 sm:pr-2.5 bg-slate-50 hover:bg-slate-100 rounded-full border border-slate-200 transition-colors shrink-0"
+                    aria-expanded={showUserDropdown}
+                    aria-haspopup="true"
+                    aria-label={`Student account options for ${profile?.name || 'Student'}`}
+                    className="flex items-center gap-1.5 sm:gap-2 p-1 sm:pl-1.5 sm:pr-2.5 bg-slate-50 hover:bg-slate-100 rounded-full border border-slate-200 transition-colors shrink-0 focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:outline-none"
                   >
                     <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-xs shrink-0 overflow-hidden shadow-2xs">
                       {profile?.avatar ? (
-                        <img src={profile.avatar} alt={profile.name} className="w-full h-full object-cover" />
+                        <img src={profile.avatar} alt={`Avatar for ${profile.name}`} className="w-full h-full object-cover" />
                       ) : (
                         profile?.name ? profile.name.charAt(0) : 'L'
                       )}
@@ -173,16 +181,16 @@ export default function TopNav() {
                       <p className="text-xs font-bold text-slate-800 leading-none truncate">{profile?.name || 'Student'}</p>
                       <p className="text-[10px] text-slate-500 leading-none mt-0.5 truncate">{profile?.targetCareer || 'Career Goal'}</p>
                     </div>
-                    <ChevronDown className="w-3 h-3 text-slate-400 shrink-0" />
+                    <ChevronDown className="w-3 h-3 text-slate-400 shrink-0" aria-hidden="true" />
                   </button>
 
                   {/* Dropdown Menu */}
                   {showUserDropdown && (
-                    <div className="absolute right-0 mt-2 w-60 bg-white rounded-2xl shadow-xl border border-slate-200 py-2 z-50 animate-in fade-in duration-150">
+                    <div role="menu" aria-label="Student Account Menu" className="absolute right-0 mt-2 w-60 bg-white rounded-2xl shadow-xl border border-slate-200 py-2 z-50 animate-in fade-in duration-150">
                       <div className="px-4 py-2.5 border-b border-slate-100 flex items-center gap-3">
                         <div className="w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-sm shrink-0 overflow-hidden shadow-2xs">
                           {profile?.avatar ? (
-                            <img src={profile.avatar} alt={profile.name} className="w-full h-full object-cover" />
+                            <img src={profile.avatar} alt={`Avatar for ${profile.name}`} className="w-full h-full object-cover" />
                           ) : (
                             profile?.name?.charAt(0) || 'L'
                           )}
@@ -197,35 +205,38 @@ export default function TopNav() {
                       </div>
 
                       <button
+                        role="menuitem"
                         onClick={() => {
                           setShowUserDropdown(false);
                           setActiveTab('profile');
                         }}
                         className="w-full text-left px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-2"
                       >
-                        <User className="w-4 h-4 text-slate-500" />
+                        <User className="w-4 h-4 text-slate-500" aria-hidden="true" />
                         <span>Edit Profile &amp; Picture</span>
                       </button>
 
                       <button
+                        role="menuitem"
                         onClick={() => {
                           setShowUserDropdown(false);
                           setShowKeyModal(true);
                         }}
                         className="w-full text-left px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-2"
                       >
-                        <Key className="w-4 h-4 text-amber-500" />
+                        <Key className="w-4 h-4 text-amber-500" aria-hidden="true" />
                         <span>Configure Live AI Key</span>
                       </button>
 
                       <button
+                        role="menuitem"
                         onClick={() => {
                           setShowUserDropdown(false);
                           logout();
                         }}
                         className="w-full text-left px-4 py-2 text-xs font-semibold text-rose-600 hover:bg-rose-50 flex items-center gap-2 border-t border-slate-100 mt-1"
                       >
-                        <LogOut className="w-4 h-4 text-rose-500" />
+                        <LogOut className="w-4 h-4 text-rose-500" aria-hidden="true" />
                         <span>Sign Out</span>
                       </button>
                     </div>
@@ -234,9 +245,10 @@ export default function TopNav() {
               ) : (
                 <button
                   onClick={() => setIsLoginModalOpen(true)}
-                  className="px-4 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-sm shadow-indigo-300 transition-all flex items-center gap-1.5"
+                  aria-label="Sign In to Student Account"
+                  className="px-4 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-sm shadow-indigo-300 transition-all flex items-center gap-1.5 focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:outline-none"
                 >
-                  <LogIn className="w-3.5 h-3.5" />
+                  <LogIn className="w-3.5 h-3.5" aria-hidden="true" />
                   <span>Sign In</span>
                 </button>
               )}
@@ -244,8 +256,8 @@ export default function TopNav() {
 
             </div>
 
-          {/* Mobile Navigation Row - Smooth horizontal pill carousel, starts from Dashboard with ZERO clipping */}
-          <div className="md:hidden flex items-center justify-start gap-2 py-2.5 px-3.5 border-t border-slate-100 overflow-x-auto no-scrollbar scroll-smooth">
+          {/* Mobile Navigation Row */}
+          <nav role="navigation" aria-label="Mobile Category Carousel" className="md:hidden flex items-center justify-start gap-2 py-2.5 px-3.5 border-t border-slate-100 overflow-x-auto no-scrollbar scroll-smooth">
             {navItems.map((item) => {
               const Icon = item.icon;
               const isActive = activeTab === item.id;
@@ -253,18 +265,20 @@ export default function TopNav() {
                 <button
                   key={item.id}
                   onClick={() => setActiveTab(item.id)}
-                  className={`px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 shrink-0 whitespace-nowrap transition-all ${
+                  aria-current={isActive ? 'page' : undefined}
+                  aria-label={`Switch to ${item.label}`}
+                  className={`px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 shrink-0 whitespace-nowrap transition-all focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:outline-none ${
                     isActive
                       ? 'bg-indigo-600 text-white font-bold shadow-xs'
                       : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                   }`}
                 >
-                  <Icon className="w-3.5 h-3.5 shrink-0" />
+                  <Icon className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
                   <span>{item.label}</span>
                 </button>
               );
             })}
-          </div>
+          </nav>
 
         </div>
       </header>

@@ -331,7 +331,8 @@ Would you like me to:
 - Or explain how this topic appears in **technical interviews**?`;
 }
 
-export async function chatWithMentor({ message, userContext = {}, history = [] }) {
+export async function chatWithMentor({ message, userMessage, userContext = {}, history = [] }) {
+  const activeMessage = (message || userMessage || '').trim();
   const systemPrompt = buildMentorSystemPrompt(userContext);
 
   const formattedHistory = (history || [])
@@ -343,13 +344,13 @@ export async function chatWithMentor({ message, userContext = {}, history = [] }
 Conversation History:
 ${formattedHistory || 'No previous messages.'}
 
-Learner's Question: ${message}
+Learner's Question: ${activeMessage}
 
 Respond as Flash Pro with an insightful, comprehensive, ChatGPT-style answer:
 `.trim();
 
   const fallbackFn = () => {
-    return generateFlashProResponse(message, userContext, history);
+    return generateFlashProResponse(activeMessage, userContext, history);
   };
 
   const response = await callClaude({

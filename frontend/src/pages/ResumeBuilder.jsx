@@ -266,11 +266,13 @@ export default function ResumeBuilder() {
 
             {/* Target Job Role */}
             <div>
-              <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+              <label htmlFor="resume-target-role" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
                 Target Job Role *
               </label>
               <div className="space-y-2">
                 <select
+                  id="resume-role-select"
+                  aria-label="Select Target Job Role"
                   value={targetRole}
                   onChange={(e) => setTargetRole(e.target.value)}
                   className="w-full px-3.5 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-bold text-slate-800 focus:outline-none focus:border-indigo-500"
@@ -282,6 +284,7 @@ export default function ResumeBuilder() {
                 </select>
 
                 <input
+                  id="resume-target-role"
                   type="text"
                   value={targetRole}
                   onChange={(e) => setTargetRole(e.target.value)}
@@ -295,10 +298,11 @@ export default function ResumeBuilder() {
             {/* Target Company & Experience Level */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
-                <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                <label htmlFor="resume-target-company" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
                   Target Company / Industry
                 </label>
                 <input
+                  id="resume-target-company"
                   type="text"
                   value={targetCompany}
                   onChange={(e) => setTargetCompany(e.target.value)}
@@ -308,10 +312,11 @@ export default function ResumeBuilder() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                <label htmlFor="resume-experience-level" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
                   Experience Level
                 </label>
                 <select
+                  id="resume-experience-level"
                   value={experienceLevel}
                   onChange={(e) => setExperienceLevel(e.target.value)}
                   className="w-full px-3.5 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-800 focus:outline-none focus:border-indigo-500"
@@ -327,12 +332,13 @@ export default function ResumeBuilder() {
             {/* ATS Matcher: Paste Job Description */}
             <div>
               <div className="flex items-center justify-between mb-1.5">
-                <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
+                <label htmlFor="resume-job-description" className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
                   Target Job Description (ATS Keyword Matcher)
                 </label>
                 <span className="text-[10px] text-slate-400">Optional</span>
               </div>
               <textarea
+                id="resume-job-description"
                 rows={3}
                 value={jobDescription}
                 onChange={(e) => setJobDescription(e.target.value)}
@@ -343,32 +349,57 @@ export default function ResumeBuilder() {
 
             {/* Contact Details */}
             <div className="border-t border-slate-100 pt-4 space-y-3">
-              <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
+              <span className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
                 Contact &amp; Portfolio Details
-              </label>
+              </span>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <input
-                  type="text"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  placeholder="Phone: +91 98765 43210"
-                  className="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs"
-                />
-                <input
-                  type="text"
-                  value={location}
-                  onChange={(e) => setLocation(e.target.value)}
-                  placeholder="Location: Bengaluru, India"
-                  className="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs"
-                />
-                <input
-                  type="text"
-                  value={githubUrl}
-                  onChange={(e) => setGithubUrl(e.target.value)}
-                  placeholder="github.com/username"
-                  className="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs"
-                />
+                <div>
+                  <label htmlFor="resume-phone" className="sr-only">Phone Number</label>
+                  <input
+                    id="resume-phone"
+                    type="text"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    placeholder="Phone: +91 98765 43210"
+                    className="w-full px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="resume-location" className="sr-only">Location</label>
+                  <input
+                    id="resume-location"
+                    type="text"
+                    value={location}
+                    onChange={(e) => setLocation(e.target.value)}
+                    placeholder="Location: Bengaluru, India"
+                    className="w-full px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="resume-github" className="sr-only">GitHub Profile</label>
+                  <input
+                    id="resume-github"
+                    type="text"
+                    value={githubUrl}
+                    onChange={(e) => setGithubUrl(e.target.value)}
+                    placeholder="github.com/username"
+                    className="w-full px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="resume-linkedin" className="sr-only">LinkedIn Profile</label>
+                  <input
+                    id="resume-linkedin"
+                    type="text"
+                    value={linkedinUrl}
+                    onChange={(e) => setLinkedinUrl(e.target.value)}
+                    placeholder="linkedin.com/in/username"
+                    className="w-full px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs"
+                  />
+                </div>
+              </div>
+            </div>
                 <input
                   type="text"
                   value={linkedinUrl}
