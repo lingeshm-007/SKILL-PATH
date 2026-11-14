@@ -1,0 +1,876 @@
+{
+  "activeUserId": "user-1794643200981",
+  "users": {
+    "user-lingesh": {
+      "profile": {
+        "id": "user-lingesh",
+        "name": "Lingesh",
+        "email": "lingesh@gmail.com",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+        "currentSkills": [
+          "Python",
+          "SQL",
+          "HTML"
+        ],
+        "certifications": "Meta Frontend Specialist, AWS Cloud Practitioner",
+        "projects": "SQLite Inventory Tracker, Portfolio Showcase with HTML/CSS",
+        "targetCareer": "Full Stack Developer",
+        "createdAt": "2026-11-14T04:30:00.000Z"
+      },
+      "analysis": {
+        "strengths": [
+          "Strong logical programming foundation in Python",
+          "Solid relational database querying skills with SQL",
+          "Understands core web document structure and semantics with HTML"
+        ],
+        "weaknesses": [
+          "No hands-on client-side scripting experience in JavaScript (ES6+)",
+          "Lacks modern declarative UI library experience with React",
+          "Backend event-driven server runtime (Node.js/Express) missing"
+        ],
+        "gaps": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "MongoDB",
+          "REST APIs"
+        ]
+      },
+      "matching": {
+        "matchPercentage": 42,
+        "requiredSkills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "SQL",
+          "REST APIs",
+          "Git"
+        ],
+        "userHas": [
+          "HTML",
+          "SQL",
+          "Python"
+        ],
+        "userMissing": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "MongoDB",
+          "REST APIs"
+        ]
+      },
+      "roadmap": [
+        {
+          "id": "step-1",
+          "skill": "JavaScript",
+          "course": "JavaScript Algorithms and Data Structures Certification",
+          "platform": "freeCodeCamp",
+          "duration": "15 hours",
+          "difficulty": "Beginner to Intermediate",
+          "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/",
+          "completed": true,
+          "quizTaken": true,
+          "quizScore": "3/3 (Pass)",
+          "isRemediation": false
+        },
+        {
+          "id": "step-2",
+          "skill": "React",
+          "course": "React Official Documentation & Interactive Deep Dive",
+          "platform": "React.dev",
+          "duration": "10 hours",
+          "difficulty": "Intermediate",
+          "url": "https://react.dev/learn",
+          "completed": false,
+          "quizTaken": false,
+          "isRemediation": false
+        },
+        {
+          "id": "step-3",
+          "skill": "Node.js",
+          "course": "Node.js & Express Crash Course",
+          "platform": "Traversy Media / YouTube",
+          "duration": "6 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.youtube.com/watch?v=fBNz5xF-Kx4",
+          "completed": false,
+          "quizTaken": false,
+          "isRemediation": false
+        },
+        {
+          "id": "step-4",
+          "skill": "MongoDB",
+          "course": "Introduction to MongoDB & Aggregation Framework",
+          "platform": "MongoDB University",
+          "duration": "8 hours",
+          "difficulty": "Beginner to Intermediate",
+          "url": "https://learn.mongodb.com/",
+          "completed": false,
+          "quizTaken": false,
+          "isRemediation": false
+        },
+        {
+          "id": "step-5",
+          "skill": "REST APIs",
+          "course": "Mastering RESTful API Architecture & Postman",
+          "platform": "freeCodeCamp",
+          "duration": "5 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org/news/build-a-restful-api/",
+          "completed": false,
+          "quizTaken": false,
+          "isRemediation": false
+        }
+      ],
+      "quizScores": [
+        {
+          "id": "quiz-log-1",
+          "skill": "JavaScript",
+          "score": 3,
+          "total": 3,
+          "passed": true,
+          "date": "10:10 AM"
+        }
+      ],
+      "mentorMessages": [
+        {
+          "id": "msg-1",
+          "role": "mentor",
+          "content": "Welcome to SkillPath AI, Lingesh! I've loaded your profile for Full Stack Developer. Our AI agents identified 5 key skill gaps to bridge your path. I'm here 24/7 to coach you, provide adaptive learning resources, and evaluate your progress!",
+          "timestamp": "10:02 AM",
+          "sender": "Mentor Agent"
+        },
+        {
+          "id": "msg-user-1794641225930",
+          "role": "user",
+          "content": "hii",
+          "timestamp": "12:57 PM"
+        },
+        {
+          "id": "msg-mentor-1794641225931",
+          "role": "mentor",
+          "content": "Hello **Lingesh**! I am **Flash Pro**, your personal AI mentor and technical copilot.\n\nI am built to assist you just like ChatGPT:\n- I can **write code** in JavaScript, Python, React, Express, SQL, and more.\n- I can **explain complex engineering concepts** using simple analogies.\n- I can **troubleshoot errors** and debug your code.\n- I monitor your progress toward **Full Stack Developer** and automatically adapt your roadmap!\n\nWhat would you like to explore or build today?",
+          "timestamp": "12:57 PM",
+          "sender": "Mentor Agent"
+        },
+        {
+          "id": "msg-user-1794641233460",
+          "role": "user",
+          "content": "I love you",
+          "timestamp": "12:57 PM"
+        },
+        {
+          "id": "msg-mentor-1794641233460",
+          "role": "mentor",
+          "content": "### Flash Pro's Answer for Lingesh:\n\nRegarding your query: **\"I love you\"**\n\nAs your AI mentor for **Full Stack Developer**, here is a structured breakdown:\n\n1. **Core Concept**:\n   In modern software engineering, addressing this effectively requires understanding the underlying data flow and architecture. Whether you are dealing with frontend interfaces or backend services, modularity and clean separation of concerns are key.\n\n2. **Practical Application**:\n   When implementing this in your projects:\n   - Always validate inputs at the API boundary.\n   - Use structured error handling (try/catch blocks with clear HTTP status codes).\n   - Test your logic with unit tests and isolated mock data.\n\n3. **Recommended Next Step**:\n   You are currently working towards **Full Stack Developer** with key gaps in **JavaScript, React, Node.js**. \n\nWould you like me to:\n- Show you a **code example** for this?\n- Break this down into **step-by-step beginner notes**?\n- Or explain how this topic appears in **technical interviews**?",
+          "timestamp": "12:57 PM",
+          "sender": "Mentor Agent"
+        },
+        {
+          "id": "msg-user-1794641243857",
+          "role": "user",
+          "content": "I dont know anything, how should I start web development from scratch?",
+          "timestamp": "12:57 PM"
+        },
+        {
+          "id": "msg-mentor-1794641243857",
+          "role": "mentor",
+          "content": "Hello **Lingesh**! I am **Flash Pro**, your dedicated AI mentor. \n\nFirst, take a deep breath — feeling like you *\"don't know anything\"* is 100% normal. Every senior engineer, architect, and tech founder started at the exact same place where you are right now!\n\n### Here is the truth: You are NOT at zero!\nYou already possess foundational skills in **Python, SQL, and HTML**. That puts you ahead of thousands of people trying to enter tech.\n\nTo become a **Full Stack Developer**, think of web development as 3 simple layers:\n1. **Frontend (The Face)**: What the user sees on screen. HTML gives the structure (bones), CSS gives the beauty (clothes), and React/JavaScript gives the actions (muscles).\n2. **Backend (The Brain)**: Node.js and Express — runs on a server in the cloud, processes logic, checks passwords, and handles requests.\n3. **Database (The Memory)**: SQL or MongoDB — stores user accounts, posts, and data permanently.\n\n---\n\n### Your 1-Step Action Plan for Today:\nWe are not going to tackle everything at once. Let's get **one small win today**:\n- Would you like me to teach you what a **JavaScript variable** is in 2 simple sentences?\n- Or would you like to see a tiny 3-line code example?\n\nTell me what sounds easiest for you, and Flash Pro will guide you step by step!",
+          "timestamp": "12:57 PM",
+          "sender": "Mentor Agent"
+        },
+        {
+          "id": "msg-user-1794641249851",
+          "role": "user",
+          "content": "Write a complete Node.js Express server code with GET and POST endpoints",
+          "timestamp": "12:57 PM"
+        },
+        {
+          "id": "msg-mentor-1794641249852",
+          "role": "mentor",
+          "content": "Here is a complete, modern **Express.js API server** written cleanly for you, Lingesh:\n\n```javascript\n// server.js\nconst express = require('express');\nconst app = express();\nconst PORT = process.env.PORT || 5000;\n\n// Middleware to parse incoming JSON payloads\napp.use(express.json());\n\n// Sample in-memory database\nlet courses = [\n  { id: 1, title: 'JavaScript Fundamentals', status: 'Completed' },\n  { id: 2, title: 'Node.js & Express Deep Dive', status: 'In Progress' }\n];\n\n// GET: Retrieve all courses\napp.get('/api/courses', (req, res) => {\n  res.status(200).json({ success: true, count: courses.length, data: courses });\n});\n\n// POST: Add a new course\napp.post('/api/courses', (req, res) => {\n  const { title } = req.body;\n  if (!title) {\n    return res.status(400).json({ success: false, error: 'Please provide course title' });\n  }\n  const newCourse = { id: courses.length + 1, title, status: 'Not Started' };\n  courses.push(newCourse);\n  res.status(201).json({ success: true, data: newCourse });\n});\n\n// Start the server\napp.listen(PORT, () => {\n  console.log(`🚀 Flash Pro server is running on http://localhost:${PORT}`);\n});\n```\n\n### How to Run This:\n1. Run `npm init -y`\n2. Install Express: `npm install express`\n3. Run `node server.js`\n\nWould you like me to show you how to connect this server to **MongoDB** or test it with Postman?",
+          "timestamp": "12:57 PM",
+          "sender": "Mentor Agent"
+        },
+        {
+          "id": "msg-user-1794641254200",
+          "role": "user",
+          "content": "How do I prepare for Full Stack Developer technical interviews?",
+          "timestamp": "12:57 PM"
+        },
+        {
+          "id": "msg-mentor-1794641254200",
+          "role": "mentor",
+          "content": "### Flash Pro's Blueprint to Get Hired as a Full Stack Developer:\n\nHere is the exact 4-step framework top tech candidates follow:\n\n#### 1. Build 3 \"Proof of Competency\" Projects\nAvoid generic calculator or todo apps. Recruiters look for:\n- **Full-Stack SaaS Platform**: User authentication (JWT), database integration, and payment simulation.\n- **Real-Time Interactive App**: Real-time chat or collaborative board using WebSockets.\n- **Data-Driven Tool**: A dashboard utilizing external APIs with search, pagination, and caching.\n\n#### 2. Master the Core Technical Questions\n- **JavaScript**: Closures, Prototypes, Event Loop, `async/await`, `Promise.all()`.\n- **Backend Architecture**: REST conventions, middleware chains, database indexing.\n- **System Design**: How to scale an app from 100 users to 100,000 users.\n\n#### 3. Behavioral & Problem-Solving (STAR Method)\nBe prepared to answer: *\"Tell me about a time you encountered a difficult bug and how you solved it.\"*\n\nWould you like me to conduct a 3-question mock interview with you right now?",
+          "timestamp": "12:57 PM",
+          "sender": "Mentor Agent"
+        }
+      ],
+      "agentLogs": [
+        {
+          "id": "log-1794642453512-959",
+          "agent": "Progress Monitor Agent",
+          "action": "Progress Monitor Agent generated 3 MCQ questions for JavaScript at 01:17 PM",
+          "detail": "Prepared quiz for learner Lingesh",
+          "status": "success",
+          "timestamp": "01:17 PM"
+        },
+        {
+          "id": "log-1794642453508-883",
+          "agent": "Progress Monitor Agent",
+          "action": "Progress Monitor Agent generated 3 MCQ questions for JavaScript at 01:17 PM",
+          "detail": "Prepared quiz for learner Lingesh",
+          "status": "success",
+          "timestamp": "01:17 PM"
+        },
+        {
+          "id": "log-1794641636251",
+          "agent": "Resume Architect Agent",
+          "action": "Resume Architect Agent ran at 01:03 PM — ATS Score: 95%",
+          "detail": "Engineered tailored ATS resume for \"AI Engineer\" with 10 matched keywords",
+          "status": "success",
+          "timestamp": "01:03 PM"
+        },
+        {
+          "id": "log-1794641218183-630",
+          "agent": "Progress Monitor Agent",
+          "action": "Progress Monitor Agent generated 3 MCQ questions for JavaScript at 12:56 PM",
+          "detail": "Prepared quiz for learner Lingesh",
+          "status": "success",
+          "timestamp": "12:56 PM"
+        },
+        {
+          "id": "log-1794641218182-289",
+          "agent": "Progress Monitor Agent",
+          "action": "Progress Monitor Agent generated 3 MCQ questions for JavaScript at 12:56 PM",
+          "detail": "Prepared quiz for learner Lingesh",
+          "status": "success",
+          "timestamp": "12:56 PM"
+        },
+        {
+          "id": "log-1",
+          "agent": "Skill Analyzer Agent",
+          "action": "Skill Analyzer Agent ran at 10:03 AM — Found 5 skill gaps",
+          "detail": "Identified gaps: JavaScript, React, Node.js, MongoDB, REST APIs",
+          "status": "success",
+          "timestamp": "10:03 AM"
+        },
+        {
+          "id": "log-2",
+          "agent": "Career Matcher Agent",
+          "action": "Career Matcher Agent ran at 10:03 AM — Match: 42%",
+          "detail": "Calculated 42% baseline match for Full Stack Developer role",
+          "status": "success",
+          "timestamp": "10:03 AM"
+        },
+        {
+          "id": "log-3",
+          "agent": "Learning Curator Agent",
+          "action": "Learning Curator Agent ran at 10:04 AM — Generated 5 resources",
+          "detail": "Curated 5 personalized courses from freeCodeCamp, React.dev, YouTube, and MongoDB Univ",
+          "status": "success",
+          "timestamp": "10:04 AM"
+        }
+      ],
+      "resume": {
+        "targetRole": "AI Engineer",
+        "atsScore": 95,
+        "matchedKeywords": [
+          "Python",
+          "PyTorch",
+          "NumPy",
+          "Pandas",
+          "Transformers",
+          "Vector Databases",
+          "Prompt Engineering",
+          "LangChain",
+          "REST APIs",
+          "Docker"
+        ],
+        "missingKeywords": [
+          "MLOps",
+          "Kubeflow",
+          "TensorRT"
+        ],
+        "summary": "Results-driven AI Engineer with strong foundations in mathematical modeling, deep learning architectures, and scalable AI system deployment. Experienced in fine-tuning large language models, implementing semantic vector search pipelines, and operationalizing generative AI workflows. Proven ability to bridge theoretical machine learning algorithms with high-performance production software.",
+        "skills": {
+          "languages": [
+            "Python (Advanced)",
+            "SQL",
+            "Bash",
+            "C++"
+          ],
+          "frameworks": [
+            "PyTorch",
+            "TensorFlow",
+            "Hugging Face Transformers",
+            "LangChain",
+            "FastAPI",
+            "NumPy",
+            "Pandas",
+            "Scikit-Learn"
+          ],
+          "databasesAndCloud": [
+            "Pinecone",
+            "ChromaDB",
+            "PostgreSQL",
+            "MongoDB",
+            "AWS (S3, EC2, SageMaker)"
+          ],
+          "toolsAndPractices": [
+            "Git/GitHub",
+            "Docker",
+            "Linux/Unix",
+            "CI/CD Pipelines",
+            "REST APIs",
+            "Jupyter Lab"
+          ]
+        },
+        "projects": [
+          {
+            "name": "Generative AI RAG Knowledge Engine",
+            "role": "Lead AI Engineer",
+            "duration": "3 Months",
+            "techStack": [
+              "Python",
+              "LangChain",
+              "Pinecone",
+              "OpenAI / Claude API",
+              "FastAPI"
+            ],
+            "highlights": [
+              "Architected an end-to-end Retrieval-Augmented Generation (RAG) system ingesting 10,000+ technical documents with sub-200ms semantic search latency.",
+              "Implemented hybrid dense-sparse vector indexing with Pinecone, increasing retrieval accuracy and question-answering fidelity by 38%.",
+              "Engineered conversational memory caching and streaming token responses via FastAPI endpoints, reducing average LLM inference costs by 24%."
+            ]
+          },
+          {
+            "name": "Computer Vision & Deep Learning Classifier",
+            "role": "Machine Learning Developer",
+            "duration": "2 Months",
+            "techStack": [
+              "Python",
+              "PyTorch",
+              "TorchVision",
+              "NumPy",
+              "Matplotlib"
+            ],
+            "highlights": [
+              "Developed and trained a Convolutional Neural Network (CNN) with residual connections achieving 96.4% test accuracy across 50,000 multi-class images.",
+              "Optimized data augmentation and learning rate scheduling (OneCycleLR), decreasing model training epoch duration by 32%.",
+              "Deployed quantized model checkpoints for edge inference with ONNX Runtime, maintaining FP16 precision with minimal memory overhead."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree": "Bachelor of Technology in Computer Science & Engineering",
+            "institution": "Regional Technical University",
+            "year": "2022 - 2026",
+            "gpaOrHonors": "CGPA: 8.8 / 10.0 • First Class with Distinction"
+          }
+        ],
+        "certifications": [
+          "DeepLearning.AI Machine Learning Specialization",
+          "Google Cloud Certified Associate Cloud Engineer",
+          "freeCodeCamp Verified Deep Learning Certification"
+        ],
+        "atsTips": [
+          "Keyword density for PyTorch, Transformers, and Vector DBs is optimized for 95%+ Workday match.",
+          "Standard single-column reverse-chronological layout ensures 100% parsing accuracy.",
+          "No multi-column tables, text boxes, or floating icons to ensure zero rejection by automated screeners."
+        ],
+        "meta": {
+          "agent": "Resume Architect Agent",
+          "model": "SkillPath AI ATS Knowledge Brain",
+          "source": "smart-engine",
+          "timestamp": "01:03 PM"
+        },
+        "contact": {
+          "name": "Lingesh",
+          "email": "lingesh@gmail.com",
+          "phone": "+91 98765 43210",
+          "location": "Bengaluru, India",
+          "portfolioUrl": "https://lingesh.dev",
+          "githubUrl": "https://github.com/lingesh",
+          "linkedinUrl": "https://linkedin.com/in/lingesh"
+        },
+        "updatedAt": "2026-11-14T07:33:56.251Z"
+      }
+    },
+    "user-priya": {
+      "profile": {
+        "id": "user-priya",
+        "name": "Priya Sharma",
+        "email": "priya.sharma@gmail.com",
+        "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+        "currentSkills": [
+          "Python",
+          "Linear Algebra",
+          "NumPy"
+        ],
+        "certifications": "Google Data Analytics Certificate, DeepLearning.AI Specialization",
+        "projects": "Digit Classification with CNNs, Matrix Factorization for Movie Recommendations",
+        "targetCareer": "AI Engineer",
+        "createdAt": "2026-11-14T05:00:00.000Z"
+      },
+      "analysis": {
+        "strengths": [
+          "Advanced mathematical intuition in Linear Algebra & Vector calculus",
+          "Proficient in numerical computation and array manipulation with NumPy",
+          "Strong foundational scripting in Python"
+        ],
+        "weaknesses": [
+          "Has not built production Transformer models or attention mechanisms",
+          "Lacks experience with Vector Databases (Pinecone/Milvus) for RAG",
+          "No hands-on fine-tuning experience with open-weights LLMs (Llama/Mistral)"
+        ],
+        "gaps": [
+          "PyTorch",
+          "Transformers",
+          "LLM Fine-Tuning",
+          "Vector Databases",
+          "LangChain"
+        ]
+      },
+      "matching": {
+        "matchPercentage": 38,
+        "requiredSkills": [
+          "Python",
+          "PyTorch",
+          "Transformers",
+          "LLM Fine-Tuning",
+          "Vector Databases",
+          "LangChain",
+          "Prompt Engineering",
+          "FastAPI"
+        ],
+        "userHas": [
+          "Python",
+          "Linear Algebra",
+          "NumPy"
+        ],
+        "userMissing": [
+          "PyTorch",
+          "Transformers",
+          "LLM Fine-Tuning",
+          "Vector Databases",
+          "LangChain"
+        ]
+      },
+      "roadmap": [
+        {
+          "id": "priya-step-1",
+          "skill": "PyTorch",
+          "course": "Deep Learning with PyTorch: Zero to GANs",
+          "platform": "freeCodeCamp",
+          "duration": "12 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org/news/deep-learning-with-pytorch/",
+          "completed": true,
+          "quizTaken": true,
+          "quizScore": "3/3 (Pass)",
+          "isRemediation": false
+        },
+        {
+          "id": "priya-step-2",
+          "skill": "Transformers",
+          "course": "Hugging Face NLP Course: Transformers in Action",
+          "platform": "Hugging Face",
+          "duration": "14 hours",
+          "difficulty": "Advanced",
+          "url": "https://huggingface.co/learn/nlp-course",
+          "completed": false,
+          "quizTaken": false,
+          "isRemediation": false
+        },
+        {
+          "id": "priya-step-3",
+          "skill": "Vector Databases",
+          "course": "Vector Embeddings & Semantic Search Masterclass",
+          "platform": "Pinecone / YouTube",
+          "duration": "5 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.pinecone.io/learn/",
+          "completed": false,
+          "quizTaken": false,
+          "isRemediation": false
+        },
+        {
+          "id": "priya-step-4",
+          "skill": "LangChain",
+          "course": "Building Generative AI Applications with LangChain",
+          "platform": "DeepLearning.AI",
+          "duration": "4 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/",
+          "completed": false,
+          "quizTaken": false,
+          "isRemediation": false
+        }
+      ],
+      "quizScores": [
+        {
+          "id": "priya-q-1",
+          "skill": "PyTorch",
+          "score": 3,
+          "total": 3,
+          "passed": true,
+          "date": "10:15 AM"
+        }
+      ],
+      "mentorMessages": [
+        {
+          "id": "priya-m-1",
+          "role": "mentor",
+          "content": "Hello Priya! As your AI Mentor, I am thrilled to guide you on the AI Engineer path. Your math and NumPy background provides a tremendous launchpad. Let's conquer Transformers and Vector search!",
+          "timestamp": "10:15 AM",
+          "sender": "Mentor Agent"
+        }
+      ],
+      "agentLogs": [
+        {
+          "id": "priya-log-1",
+          "agent": "Skill Analyzer Agent",
+          "action": "Skill Analyzer Agent evaluated Priya at 10:15 AM — Found 5 gaps for AI Engineer",
+          "detail": "Gaps: PyTorch, Transformers, LLM Fine-Tuning, Vector Databases, LangChain",
+          "status": "success",
+          "timestamp": "10:15 AM"
+        },
+        {
+          "id": "priya-log-2",
+          "agent": "Career Matcher Agent",
+          "action": "Career Matcher Agent calculated 38% match for AI Engineer",
+          "detail": "Match: 38%. Strong math base, missing generative AI toolchain",
+          "status": "success",
+          "timestamp": "10:15 AM"
+        }
+      ]
+    },
+    "user-alex": {
+      "profile": {
+        "id": "user-alex",
+        "name": "Alex Chen",
+        "email": "alex.chen@gmail.com",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        "currentSkills": [
+          "Linux",
+          "Networking Protocols",
+          "Bash"
+        ],
+        "certifications": "Cisco CCNA, CompTIA Network+",
+        "projects": "Automated Log Parsing with Bash, Wireshark Packet Inspection Lab",
+        "targetCareer": "Cybersecurity Analyst",
+        "createdAt": "2026-11-14T05:15:00.000Z"
+      },
+      "analysis": {
+        "strengths": [
+          "Deep understanding of Linux kernel administration & permission models",
+          "Strong mastery of TCP/IP, DNS, ARP, and packet structure",
+          "Automated scripting skills in Bash"
+        ],
+        "weaknesses": [
+          "No hands-on SIEM event correlation (Splunk/Wazuh)",
+          "Lacks penetration testing methodology and exploit analysis",
+          "Has not configured enterprise firewalls or IDS/IPS systems"
+        ],
+        "gaps": [
+          "Network Security",
+          "SIEM Tools",
+          "Cryptography",
+          "Ethical Hacking",
+          "Vulnerability Assessment"
+        ]
+      },
+      "matching": {
+        "matchPercentage": 45,
+        "requiredSkills": [
+          "Linux",
+          "Networking Protocols",
+          "Network Security",
+          "SIEM Tools",
+          "Cryptography",
+          "Ethical Hacking",
+          "Vulnerability Assessment"
+        ],
+        "userHas": [
+          "Linux",
+          "Networking Protocols",
+          "Bash"
+        ],
+        "userMissing": [
+          "Network Security",
+          "SIEM Tools",
+          "Cryptography",
+          "Ethical Hacking",
+          "Vulnerability Assessment"
+        ]
+      },
+      "roadmap": [
+        {
+          "id": "alex-step-1",
+          "skill": "Network Security",
+          "course": "Network Defense & Protocol Analysis",
+          "platform": "Coursera",
+          "duration": "16 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.coursera.org",
+          "completed": true,
+          "quizTaken": true,
+          "quizScore": "3/3 (Pass)",
+          "isRemediation": false
+        },
+        {
+          "id": "alex-step-2",
+          "skill": "SIEM Tools",
+          "course": "Enterprise Security Monitoring with Splunk",
+          "platform": "Udemy",
+          "duration": "10 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.udemy.com",
+          "completed": false,
+          "quizTaken": false,
+          "isRemediation": false
+        },
+        {
+          "id": "alex-step-3",
+          "skill": "Ethical Hacking",
+          "course": "Ethical Hacking & Penetration Testing Foundations",
+          "platform": "freeCodeCamp",
+          "duration": "15 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "quizTaken": false,
+          "isRemediation": false
+        }
+      ],
+      "quizScores": [
+        {
+          "id": "alex-q-1",
+          "skill": "Network Security",
+          "score": 3,
+          "total": 3,
+          "passed": true,
+          "date": "09:45 AM"
+        }
+      ],
+      "mentorMessages": [
+        {
+          "id": "alex-m-1",
+          "role": "mentor",
+          "content": "Welcome Alex! With your Linux and networking foundations, you are positioned well for a Cybersecurity Analyst career. Let's master SIEM and Threat Hunting!",
+          "timestamp": "09:45 AM",
+          "sender": "Mentor Agent"
+        }
+      ],
+      "agentLogs": [
+        {
+          "id": "alex-log-1",
+          "agent": "Skill Analyzer Agent",
+          "action": "Skill Analyzer Agent ran for Alex at 09:45 AM — Identified 5 gaps for Cybersecurity",
+          "status": "success",
+          "timestamp": "09:45 AM"
+        }
+      ]
+    },
+    "user-1794643200981": {
+      "profile": {
+        "id": "user-1794643200981",
+        "name": "student",
+        "email": "student@gmail.com",
+        "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=student",
+        "currentSkills": [
+          "Python",
+          "SQL",
+          "HTML"
+        ],
+        "certifications": "Google Certified Student",
+        "projects": "Independent Web Project",
+        "targetCareer": "Full Stack Developer",
+        "createdAt": "2026-11-14T08:00:00.982Z"
+      },
+      "analysis": {
+        "strengths": [
+          "Foundational knowledge in Python",
+          "Foundational knowledge in SQL",
+          "Foundational knowledge in HTML"
+        ],
+        "weaknesses": [
+          "Limited hands-on production experience in JavaScript",
+          "End-to-end architecture integration missing for Full Stack Developer",
+          "Lack of verified automated testing and containerized deployments"
+        ],
+        "gaps": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "MongoDB",
+          "REST APIs",
+          "CSS",
+          "Git",
+          "TypeScript"
+        ],
+        "meta": {
+          "agent": "Skill Analyzer Agent",
+          "model": "SkillPath AI Conversational Brain",
+          "source": "smart-engine",
+          "timestamp": "01:30 PM"
+        }
+      },
+      "matching": {
+        "matchPercentage": 25,
+        "requiredSkills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "SQL",
+          "REST APIs",
+          "Git"
+        ],
+        "userHas": [
+          "Python",
+          "SQL",
+          "HTML"
+        ],
+        "userMissing": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "MongoDB",
+          "REST APIs",
+          "CSS",
+          "Git",
+          "TypeScript"
+        ],
+        "meta": {
+          "agent": "Career Matcher Agent",
+          "model": "SkillPath AI Conversational Brain",
+          "source": "smart-engine",
+          "timestamp": "01:30 PM"
+        }
+      },
+      "roadmap": [
+        {
+          "id": "rec-1794643200982-0",
+          "skill": "JavaScript",
+          "course": "JavaScript Algorithms and Data Structures Certification",
+          "platform": "freeCodeCamp",
+          "duration": "15 hours",
+          "difficulty": "Beginner to Intermediate",
+          "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794643200982-1",
+          "skill": "React",
+          "course": "React Official Documentation & Interactive Deep Dive",
+          "platform": "React.dev",
+          "duration": "10 hours",
+          "difficulty": "Intermediate",
+          "url": "https://react.dev/learn",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794643200982-2",
+          "skill": "Node.js",
+          "course": "Node.js & Express Crash Course",
+          "platform": "Traversy Media / YouTube",
+          "duration": "6 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.youtube.com/watch?v=fBNz5xF-Kx4",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794643200982-3",
+          "skill": "MongoDB",
+          "course": "Introduction to MongoDB & Aggregation Framework",
+          "platform": "MongoDB University",
+          "duration": "8 hours",
+          "difficulty": "Beginner to Intermediate",
+          "url": "https://learn.mongodb.com/",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794643200982-4",
+          "skill": "REST APIs",
+          "course": "Mastering RESTful API Architecture & Postman",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "5 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org/news/build-a-restful-api/",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794643200982-5",
+          "skill": "CSS",
+          "course": "CSS Essential Masterclass & Best Practices",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "8 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794643200982-6",
+          "skill": "Git",
+          "course": "Git Essential Masterclass & Best Practices",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "8 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "isRemediation": false
+        },
+        {
+          "id": "rec-1794643200982-7",
+          "skill": "TypeScript",
+          "course": "TypeScript Essential Masterclass & Best Practices",
+          "platform": "Udemy / freeCodeCamp",
+          "duration": "8 hours",
+          "difficulty": "Intermediate",
+          "url": "https://www.freecodecamp.org",
+          "completed": false,
+          "isRemediation": false
+        }
+      ],
+      "quizScores": [],
+      "mentorMessages": [
+        {
+          "id": "msg-1794643200982",
+          "role": "mentor",
+          "content": "Welcome to SkillPath AI, student! I have personalized your interface for Full Stack Developer. Our AI agents identified 8 target gaps and drafted your custom roadmap!",
+          "timestamp": "01:30 PM",
+          "sender": "Mentor Agent"
+        }
+      ],
+      "agentLogs": [
+        {
+          "id": "log-1794643200982",
+          "agent": "Skill Analyzer Agent",
+          "action": "Skill Analyzer Agent initialized profile for student at 01:30 PM",
+          "detail": "Identified gaps for Full Stack Developer: JavaScript, React, Node.js, MongoDB, REST APIs, CSS, Git, TypeScript",
+          "status": "success",
+          "timestamp": "01:30 PM"
+        }
+      ]
+    }
+  },
+  "settings": {
+    "apiKey": ""
+  }
+}

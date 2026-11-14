@@ -1,0 +1,13 @@
+{
+  "name": "skillpath-ai-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SkillPath AI - Agentic AI-powered personalized learning platform",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "backend": "cd backend && node src/server.js",
+    "frontend": "cd frontend && node node_modules/vite/bin/vite.js --host 0.0.0.0 --port 3000",
+    "dev": "node backend/src/server.js"
+  }
+}
+
